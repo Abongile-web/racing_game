@@ -14,6 +14,10 @@ body {
   font-family: speedFont, sans-serif;
 }
 
+html, body {
+  overflow-x: none !important;
+}
+
 button {
   font-family: speedFont, sans-serif;
   border: none;
@@ -72,6 +76,9 @@ button:hover {
 
 .game .cars img {
   width: 10%;
+  position: relative;
+  left: 0;
+  z-index: 1;
 }
 
 .game .begin {
@@ -146,6 +153,10 @@ button:hover {
 .game .selection .selection_background h3 {
   color: #457b9d;
   font-size: 40px;
+}
+
+.game .selection .selection_background span {
+  color: red;
 }
 
 .game .selection .selection_background form ul {

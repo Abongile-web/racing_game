@@ -23,10 +23,10 @@
 
         <!--Cars-->
         <div class="cars">
-            <img src="./Assets/green car.png" class="car car1" alt="image of green car">
-            <img src="./Assets/Orange car.png" class="car car2" alt="image of orange car">
-            <img src="./Assets/Red car.png" class="car car3" alt="image of red car">
-            <img src="./Assets/yellow car.png" class="car car4" alt="image of yellow car">
+            <img src="./Assets/green car.png" id="car1" alt="image of green car">
+            <img src="./Assets/Orange car.png" id="car2" alt="image of orange car">
+            <img src="./Assets/Red car.png" id="car3" alt="image of red car">
+            <img src="./Assets/yellow car.png" id="car4" alt="image of yellow car">
         </div>
 
         <!--Start/Selection-->
@@ -40,6 +40,7 @@
             <div class="selection">
                 <div class="selection_background">
                     <h3>Pick your car</h3>
+                    <span></span>
 
                     <form name="myform">
                         <ul>
@@ -65,7 +66,7 @@
                         <li>3. Goodluck!!</li>
                     </ul>
 
-                    <button id="close" onclick="close()">Close</button>
+                    <button id="close" onclick="close_btn()">Close</button>
                 </div>
             </div>
 
@@ -73,7 +74,7 @@
             <div class="winner">
                 <div class="winner_background">
                     <div class="reveal">
-                        <h3>You Won!!</h3>
+                        <h3></h3>
                         <p>The <span></span> car won</p>
                     </div>
 

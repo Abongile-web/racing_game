@@ -38,6 +38,10 @@
       font-family: speedFont, sans-serif;
   }
 
+  html, body {
+    overflow-x: none !important;
+  }
+
 //*****All buttons*****  
   button {
     font-family: speedFont, sans-serif;
@@ -79,6 +83,10 @@
         padding-top: 10px;
         img {
             width: 10%;
+            position: relative;
+            left: 0;
+            z-index: 1;
+            
         }
     }
     //*****START*****
@@ -107,6 +115,9 @@
             h3 {
                 color: #457b9d;
                 font-size: 40px;
+            }
+            span {
+                color: red;
             }
             form {
                 ul {
