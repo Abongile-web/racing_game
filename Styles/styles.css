@@ -14,6 +14,18 @@ body {
   font-family: speedFont, sans-serif;
 }
 
+button {
+  font-family: speedFont, sans-serif;
+  border: none;
+  background-color: transparent;
+  color: #457b9d;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #7daecc;
+}
+
 .header {
   height: 10vh;
   display: -webkit-box;
@@ -60,5 +72,293 @@ body {
 
 .game .cars img {
   width: 10%;
+}
+
+.game .begin {
+  position: absolute;
+  width: 100%;
+  height: 74vh;
+  margin-top: -74vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game .begin button {
+  font-size: 150px;
+  border: none;
+  background-color: transparent;
+  color: #457b9d;
+}
+
+.game .begin button:hover {
+  cursor: pointer;
+  color: #7daecc;
+}
+
+.game .selection {
+  position: absolute;
+  width: 100%;
+  height: 74vh;
+  margin-top: -74vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.game .selection .selection_background {
+  background-color: #a8dadc;
+  width: 50%;
+  height: 80%;
+  padding: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.game .selection .selection_background h3 {
+  color: #457b9d;
+  font-size: 40px;
+}
+
+.game .selection .selection_background form ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game .selection .selection_background form ul li {
+  padding: 20px;
+  list-style: none;
+  font-size: 25px;
+}
+
+.game .selection .selection_background form ul #green_car {
+  color: green;
+}
+
+.game .selection .selection_background form ul #orange_car {
+  color: orange;
+}
+
+.game .selection .selection_background form ul #red_car {
+  color: red;
+}
+
+.game .selection .selection_background form ul #yellow_car {
+  color: yellow;
+}
+
+.game .selection .selection_background button {
+  font-size: 30px;
+}
+
+.game .information {
+  position: absolute;
+  width: 100%;
+  height: 74vh;
+  margin-top: -74vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.game .information .information_background {
+  background-color: #a8dadc;
+  width: 50%;
+  height: 80%;
+  padding: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.game .information .information_background h3 {
+  color: #457b9d;
+  font-size: 40px;
+}
+
+.game .information .information_background ul {
+  color: #457b9d;
+}
+
+.game .information .information_background ul li {
+  padding: 10px;
+  font-size: 20px;
+  list-style: none;
+}
+
+.game .winner {
+  position: absolute;
+  width: 100%;
+  height: 74vh;
+  margin-top: -74vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.game .winner .winner_background {
+  background-color: #a8dadc;
+  width: 50%;
+  height: 80%;
+  padding: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-content: center;
+}
+
+.game .winner .winner_background h3 {
+  color: #457b9d;
+  font-size: 60px;
+}
+
+.game .winner .winner_background .reveal, .game .winner .winner_background .options {
+  padding: 20px;
+}
+
+.game .winner .winner_background .options button {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.game .finish {
+  position: absolute;
+  width: 100%;
+  height: 74vh;
+  margin-top: -74vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: brown;
+  width: 5vw;
+  right: 0;
+}
+
+.game .finish .finish_background {
+  background-color: #457b9d;
+  height: 74vh;
+  width: 5vw;
+}
+
+.game .finish .finish_background ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  height: 74vh;
+  text-align: center;
+}
+
+.game .finish .finish_background ul li {
+  list-style: none;
+  font-size: 30px;
+  color: white;
+}
+
+.footer {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer button {
+  font-size: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

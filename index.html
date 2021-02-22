@@ -38,48 +38,65 @@
             <!--****Hidden sections****-->
             <!--Car selection-->
             <div class="selection">
-                <h3>Pick your car</h3>
+                <div class="selection_background">
+                    <h3>Pick your car</h3>
 
-                <form name="myform">
-                    <ul>
-                        <li id="green_car">Green <br><input type="radio" value="green" name="color" ></li><br>
-                        <li id="orange_car">Orange <br><input type="radio" value="orange" name="color" ></li><br>
-                        <li id="red_car">Red <br><input type="radio" value="red" name="color" ></li><br>
-                        <li id="yellow_car">Yellow <br><input type="radio" value="yellow" name="color" ></li>
-                    </ul>
-                </form>
+                    <form name="myform">
+                        <ul>
+                            <li id="green_car">Green <br><input type="radio" value="green" name="color" ></li><br>
+                            <li id="orange_car">Orange <br><input type="radio" value="orange" name="color" ></li><br>
+                            <li id="red_car">Red <br><input type="radio" value="red" name="color" ></li><br>
+                            <li id="yellow_car">Yellow <br><input type="radio" value="yellow" name="color" ></li>
+                        </ul>
+                    </form>
 
-                <button onclick="go()">GO!</button>
+                    <button onclick="go()">GO!</button>
+                </div>
             </div>
 
             <!--Information board-->
             <div class="information">
-                <h3>Information</h3>
+                <div class="information_background">
+                    <h3>Information</h3>
 
-                <ol>
-                    <li>Choose a car</li>
-                    <li>The first car to reach the finish line wins</li>
-                    <li>Goodluck!!</li>
-                </ol>
+                    <ul>
+                        <li>1. Choose a car</li>
+                        <li>2. The first car to reach the finish line wins</li>
+                        <li>3. Goodluck!!</li>
+                    </ul>
 
-                <button id="close" onclick="close()">Close</button>
+                    <button id="close" onclick="close()">Close</button>
+                </div>
             </div>
 
             <!--Win/lose display-->
             <div class="winner">
-                <h1></h1>
-                    <p>The <span></span> car won</p>
+                <div class="winner_background">
+                    <div class="reveal">
+                        <h3>You Won!!</h3>
+                        <p>The <span></span> car won</p>
+                    </div>
 
-                    <br>
-
-                    <button id="replayButton" onclick="replay_btn()">Replay</button>
-                    <button id="menuButton" onclick="menu_btn()">Main Menu</button>
+                    <div class="options">
+                        <button id="replayButton" onclick="replay_btn()">Replay</button>
+                        <button id="menuButton" onclick="menu_btn()">Main Menu</button>
+                    </div>
+                </div>
             </div>
 
 
         <!--Finish line-->
         <div class="finish">
-            Finish
+            <div class="finish_background">
+                <ul>
+                    <li>F</li>
+                    <li>i</li>
+                    <li>n</li>
+                    <li>i</li>
+                    <li>s</li>
+                    <li>h</li>
+                </ul>
+            </div>
         </div>
 
         <!--Racing track-->

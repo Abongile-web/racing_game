@@ -1,3 +1,26 @@
+@mixin center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin gameCenter() {
+    position: absolute;
+    width: 100%;
+    height: 74vh;
+    margin-top: -74vh;
+}
+
+@mixin sectionBackgrounds(){
+    background-color: #a8dadc;
+    width: 50%;
+    height: 80%;
+    padding: 20px;
+    text-align: center;
+    @include center();
+    flex-direction: column;
+    justify-content: space-between;
+}
 //*****reset styling*****
 * {
     margin: 0;
@@ -15,12 +38,22 @@
       font-family: speedFont, sans-serif;
   }
 
+//*****All buttons*****  
+  button {
+    font-family: speedFont, sans-serif;
+    border: none;
+    background-color: transparent;
+    color: #457b9d;
+    &:hover {
+        cursor: pointer;
+        color: #7daecc;
+    }
+  }
+
 //*****HEADER SECTION*****  
 .header {
     height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include center();
     h1 {
         color: #457b9d;
         font-size: 40px;
@@ -31,11 +64,13 @@
 .game {
     height: 80vh;
     background-color: rgb(206, 206, 206);
+    //*****TRACK*****
     .track {
         background-color: red;
         width: 100%;
         height: 3vh;
     }
+    //*****CARS*****
     .cars {
         display: flex;
         height: 74vh;
@@ -45,5 +80,143 @@
         img {
             width: 10%;
         }
+    }
+    //*****START*****
+    .begin {
+        @include gameCenter();
+        @include center();
+        button {
+            font-size: 150px;
+            border: none;
+            background-color: transparent;
+            color: #457b9d;
+            &:hover {
+                cursor: pointer;
+                color: #7daecc;
+            }
+        }
+    }
+
+    //*****SELECTION*****
+    .selection {
+        @include gameCenter();
+        @include center();
+        display: none;
+        .selection_background {
+            @include sectionBackgrounds();
+            h3 {
+                color: #457b9d;
+                font-size: 40px;
+            }
+            form {
+                ul {
+                    @include center();
+                    li {
+                        padding: 20px;
+                        list-style: none;
+                        font-size: 25px;
+                    }
+                    #green_car {
+                        color: green;
+                    }
+                    #orange_car {
+                        color: orange;
+                    }
+                    #red_car {
+                        color: red;
+                    }
+                    #yellow_car {
+                        color: yellow;
+                    }
+                }
+            }
+            button {
+                font-size: 30px;
+            }
+        }
+    }
+
+    //*****INFORMATION BOARD*****
+    .information {
+        @include gameCenter();
+        @include center();
+        display: none;
+        .information_background {
+            @include sectionBackgrounds();
+            h3 {
+                color: #457b9d;
+                font-size: 40px;
+            }
+            ul {
+                color: #457b9d;
+                li {
+                    padding: 10px;
+                    font-size: 20px;
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+    //*****WIN/LOSE DISPLAY*****
+    .winner {
+        @include gameCenter();
+        @include center();
+        display: none;
+        .winner_background {
+            @include sectionBackgrounds();
+            justify-content: center;
+            h3 {
+                color: #457b9d;
+                font-size: 60px;
+            }
+            .reveal, .options {
+                padding: 20px;
+            }
+            .options {
+                button {
+                    font-size: 20px;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+
+    //*****FINISH LINE*****
+    .finish {
+        @include gameCenter();
+        @include center();
+        background-color: brown;
+        width: 5vw;
+        right: 0;
+        .finish_background {
+            background-color: #457b9d;
+            height: 74vh;
+            width: 5vw;
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 5px;
+                height: 74vh;
+                text-align: center;
+                li {
+                    list-style: none;
+                    font-size: 30px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+//*****INFORMATION/FOOTER SECTION*****
+.footer {
+    height: 10vh;
+    @include center();
+    button {
+        font-size: 20px;
     }
 }
