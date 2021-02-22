@@ -15,7 +15,8 @@ body {
 }
 
 html, body {
-  overflow-x: none !important;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
 }
 
 button {
@@ -371,5 +372,38 @@ button:hover {
 
 .footer button {
   font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .header h1 {
+    font-size: 20px;
+  }
+  .game .information .information_background h3 {
+    font-size: 20px;
+  }
+  .game .information .information_background ul li {
+    font-size: 10px;
+  }
+  .game .begin button {
+    font-size: 120px;
+  }
+  .game .selection .selection_background h3 {
+    font-size: 20px;
+  }
+  .game .selection .selection_background form ul li {
+    font-size: 15px;
+  }
+  .game .selection .selection_background button {
+    font-size: 15px;
+  }
+  .game .winner .winner_background .reveal h3 {
+    font-size: 20px;
+  }
+  .game .winner .winner_background .reveal p {
+    font-size: 10px;
+  }
+  .game .winner .winner_background .options button {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

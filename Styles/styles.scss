@@ -39,7 +39,8 @@
   }
 
   html, body {
-    overflow-x: none !important;
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
   }
 
 //*****All buttons*****  
@@ -231,3 +232,61 @@
         font-size: 20px;
     }
 }
+
+//*****MOBILE DEVICE VIEW*****
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+
+    .header {
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    .game {
+        .information {
+            .information_background {
+                h3 {
+                    font-size: 20px;
+                }
+                ul li {
+                    font-size: 10px;
+                }
+            }
+        }
+        .begin {
+            button {
+                font-size: 120px;
+            }
+        }
+        .selection {
+            .selection_background {
+                h3 {
+                    font-size: 20px;
+                }
+                form ul li {
+                    font-size: 15px;
+                }
+                button {
+                    font-size: 15px;
+                }
+            }
+        }
+        .winner {
+            .winner_background {
+                .reveal {
+                    h3 {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 10px;
+                    }
+                }
+                .options {
+                    button {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+  }

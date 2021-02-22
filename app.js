@@ -12,6 +12,8 @@ function close_btn() {
 //*****START BUTTON *****/
 function start() {
     document.querySelector(".selection").style.display = "flex";
+
+    document.querySelector(".begin").style.display = "none";
 }
 
 //*****GO BUTTON *****/
