@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: speedFont;
+  src: url(../Assets/SFSpeedwaystarBold.ttf);
+}
+
+body {
+  font-family: speedFont, sans-serif;
+}
+
+.header {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header h1 {
+  color: #457b9d;
+  font-size: 40px;
+}
+
+.game {
+  height: 80vh;
+  background-color: #cecece;
+}
+
+.game .track {
+  background-color: red;
+  width: 100%;
+  height: 3vh;
+}
+
+.game .cars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 74vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+}
+
+.game .cars img {
+  width: 10%;
+}
+/*# sourceMappingURL=styles.css.map */

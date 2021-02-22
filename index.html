@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Styles/styles.css">
+    <title>Need for Speed 2.0</title>
+</head>
+<body>
+    <!--HEADER SECTION-->
+    <section class="header">
+        <h1>Need for speed 2.0</h1>
+    </section>
+
+
+    <!--GAME SECTION-->
+    <section class="game">
+        <!--Racing track-->
+        <div class="track track1">
+            
+        </div>
+
+        <!--Cars-->
+        <div class="cars">
+            <img src="./Assets/green car.png" class="car car1" alt="image of green car">
+            <img src="./Assets/Orange car.png" class="car car2" alt="image of orange car">
+            <img src="./Assets/Red car.png" class="car car3" alt="image of red car">
+            <img src="./Assets/yellow car.png" class="car car4" alt="image of yellow car">
+        </div>
+
+        <!--Start/Selection-->
+        <div class="begin">
+            <button class="start" onclick="start()">START</button>
+        </div>
+
+
+            <!--****Hidden sections****-->
+            <!--Car selection-->
+            <div class="selection">
+                <h3>Pick your car</h3>
+
+                <form name="myform">
+                    <ul>
+                        <li id="green_car">Green <br><input type="radio" value="green" name="color" ></li><br>
+                        <li id="orange_car">Orange <br><input type="radio" value="orange" name="color" ></li><br>
+                        <li id="red_car">Red <br><input type="radio" value="red" name="color" ></li><br>
+                        <li id="yellow_car">Yellow <br><input type="radio" value="yellow" name="color" ></li>
+                    </ul>
+                </form>
+
+                <button onclick="go()">GO!</button>
+            </div>
+
+            <!--Information board-->
+            <div class="information">
+                <h3>Information</h3>
+
+                <ol>
+                    <li>Choose a car</li>
+                    <li>The first car to reach the finish line wins</li>
+                    <li>Goodluck!!</li>
+                </ol>
+
+                <button id="close" onclick="close()">Close</button>
+            </div>
+
+            <!--Win/lose display-->
+            <div class="winner">
+                <h1></h1>
+                    <p>The <span></span> car won</p>
+
+                    <br>
+
+                    <button id="replayButton" onclick="replay_btn()">Replay</button>
+                    <button id="menuButton" onclick="menu_btn()">Main Menu</button>
+            </div>
+
+
+        <!--Finish line-->
+        <div class="finish">
+            Finish
+        </div>
+
+        <!--Racing track-->
+        <div class="track track2">
+
+        </div>
+    </section>
+
+
+    <!--INFORMATION/FOOTER SECTION-->
+    <section class="footer">
+        <button class="info" onclick="info()">INFO</button>
+    </section>
+
+
+<script src="./app.js"></script>
+</body>
+</html>
