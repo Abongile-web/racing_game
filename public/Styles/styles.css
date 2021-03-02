@@ -14,7 +14,8 @@ body {
   font-family: speedFont, sans-serif;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden !important;
   scroll-behavior: smooth;
 }
@@ -301,7 +302,8 @@ button:hover {
   font-size: 60px;
 }
 
-.game .winner .winner_background .reveal, .game .winner .winner_background .options {
+.game .winner .winner_background .reveal,
+.game .winner .winner_background .options {
   padding: 20px;
 }
 
@@ -403,6 +405,58 @@ button:hover {
     font-size: 10px;
   }
   .game .winner .winner_background .options button {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header h1 {
+    font-size: 20px;
+  }
+  .game .information .information_background {
+    width: 80%;
+  }
+  .game .information .information_background h3 {
+    font-size: 20px;
+  }
+  .game .information .information_background ul li {
+    font-size: 10px;
+  }
+  .game .begin button {
+    font-size: 80px;
+  }
+  .game .selection .selection_background {
+    width: 80%;
+  }
+  .game .selection .selection_background h3 {
+    font-size: 20px;
+  }
+  .game .selection .selection_background form ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .game .selection .selection_background form ul li {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .game .selection .selection_background button {
+    font-size: 15px;
+  }
+  .game .winner .winner_background {
+    width: 80%;
+  }
+  .game .winner .winner_background .reveal h3 {
+    font-size: 20px;
+  }
+  .game .winner .winner_background .reveal p {
+    font-size: 10px;
+  }
+  .game .winner .winner_background .options button {
+    font-size: 15px;
+  }
+  .game .finish .finish_background ul li {
     font-size: 15px;
   }
 }
